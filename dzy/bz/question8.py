@@ -6,12 +6,12 @@ import matplotlib.pyplot as plt
 
 # 定义请求头
 header = {
-    'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Mobile Safari/537.36',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.42',
     'Host': 's.weibo.com',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
     'Accept-Language': 'zh-CN,zh-Hans;q=0.9',
     'Accept-Encoding': 'gzip, deflate, br',
-    'Cookie': 'SUB=_2AkMUGjltf8NxqwJRmfEWyG_lbIl1wwrEieKiRsi2JRMxHRl-yT9jql4LtRB6P5oXgpHtha87fYLLbh9TKIkr6hiiJ0X5; SUBP=0033WrSXqPxfM72-Ws9jqgMF55529P9D9WWdc11WTbuIsN4n-Z.rP3k8; _s_tentry=passport.weibo.com; Apache=6464261857660.487.1665578585855; SINAGLOBAL=6464261857660.487.1665578585855; ULV=1665578585886:1:1:1:6464261857660.487.1665578585855:; XSRF-TOKEN=Amt-5V9wUM8qIpsSEoGid6iR; WBPSESS=5Gh1MjbHbWED7wnbzL0HelA_gUWeb5u97hMb3slczzRGwDfl80GoMsIpoej-oHuEPvH6gsLP013aJrO-W2hCbMLRlOvl7V2HpoeXnO3O0rKYn74THdBMMojq-nfdnW7c'
+    'Cookie': 'SUB=_2AkMUGjsrf8NxqwFRmP0TxGLlbI1-zwnEieKiRsrwJRMxHRl-yT92qhNetRB6P5oVxEApmv1xh3frvIztW2F0Z8WEgysT; SUBP=0033WrSXqPxfM72-Ws9jqgMF55529P9D9W5Kj9z8xsxhPlHcf74GnrC3; WBPSESS=lGn6cRy34B6AsqM-wzgd2HCTMpCo042RM9Fb3pmKiLUvSDY6_D7pMIoC_BlzVJQuthStDJLZzCCMrr5jmCjwnh3vS2Cg4j6IzeuE1Ma9hvPj5qu1gP2likat4BkHCgPVDTky-vqqLD9wG2bb-2q3CiWqP_IvpI_Vrp33tW6QoEE=; XSRF-TOKEN=1iRm25fcCwOHa4fcGi8FKRxh'
 }
 # 设置请求连接
 url = 'https://s.weibo.com/top/summary?cate=realtimehot'

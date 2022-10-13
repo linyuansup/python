@@ -18,18 +18,22 @@ if __name__ == '__main__':
         lis = fp.read().split('\n')
     for i in range(len(lis)):
         lis[i] = lis[i].split(' ')
+    # 行列对调
     reverse = rev(lis)
     arr = numpy.array(reverse)
     date = arr[0]
     time = arr[1]
+    # 提取
     temper = arr[2].astype(float)
     wet = arr[3].astype(float)
     light = arr[4].astype(float)
     vol = arr[5].astype(float)
+    # 用 numpy 计算对应值
     print("最大值：%.2f" % max(light))
     print("最小值：%.2f" % min(light))
     print("平均值：%.2f" % numpy.mean(light))
     print("标准差：%.2f" % numpy.std(light))
+    # 绘图
     xlen = range(1, len(date) + 1)
     font = {'family': 'SimHei'}
     matplotlib.rc("font", **font)
