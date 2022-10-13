@@ -20,9 +20,9 @@ if __name__ == '__main__':
     for item in items.find_all('li'):
         span = str(item.find('span'))[6:].split('<')[0]  # 热度内容
         index = str(item.find('span')).find('<em>')  # 热度
-        if not index == -1:
+        if not index == -1:  # 防止热度标签为空
             hot = str(item.find('span'))[index + 4:].split('<')[0]  # 截取热度字符串
-            if not hot == '':
+            if not hot == '':  # 防止热度字符串为空
                 res[span] = int(hot)  # 转型并插入
     # 设置字体
     font = {'family': 'Microsoft Yahei'}
